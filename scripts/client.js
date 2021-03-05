@@ -16,9 +16,17 @@ function addEmployee(){
         title: $( '#titleIn' ).val( ),
         salary: $( '#salaryIn' ).val( )
     }
-
+    // empty text imput
     $( '.inputText' ).val( '' );
-
+    // push newEmployee object into allEmployees array
     allEmployees.push( newEmployee );
+    // update the DOM
+    showEmployees();
     return allEmployees;
+}
+
+function showEmployees( ){
+    console.log( 'in showEmployees' );
+
+    
 }
