@@ -28,5 +28,11 @@ function addEmployee(){
 function showEmployees( ){
     console.log( 'in showEmployees' );
 
-    
+    // let table = $( '#employeeList' );
+    // table.empty();
+
+    // for( let i=0; i<allEmployees.length; i++){
+    //     table.append(`<tr>
+    //     <td>${allEmployees[i].fname}</td>`)
+    // }
 }
