@@ -13,13 +13,27 @@
     <h1>Alex's Salary Calculator</h1>
 
     <div id="addEmployee">
-        <h2>Add Employee</h2>
+        <h2 id="addEmployeeHeader">Add Employee</h2>
         <input type="text" placeholder="First Name"   id="firstNameIn">
         <input type="text" placeholder="Last Name"    id="lastNameIn">
         <input type="text" placeholder="ID"           id="idIn">
         <input type="text" placeholder="Title"        id="titleIn">
         <input type="text" placeholder="Annual Salary"id="salaryIn">
         <button id="submitButton">Submit</button>
+    </div>
+
+    <div id="outputEmployee">
+        <h2 id="employeeListHeader">Employees:</h2>
+        <table border=2 id="employeeTable">
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>ID</td>
+                <td>Title</td>
+                <td>Annual Salary</td>
+                <td></td>
+            </tr>
+        </table>
     </div>
     
 </body>
