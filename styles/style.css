@@ -1,12 +1,16 @@
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: beige;
+    background-color: #EEEDE7;
 }
 
 h1{
     text-align: center;
-    background-color: burlywood;
+    background-color: #B9B7BD;
     padding: 1em;
     margin: -22px;
 
+}
+
+#total{
+    text-align: right;
 }

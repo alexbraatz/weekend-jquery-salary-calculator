@@ -1,5 +1,9 @@
 $( document ).ready( readyNow );
 
 function readyNow(){
-    console.log( 'JQ' );
+    $( '#submitButton' ).on( 'click', addEmployee ); 
+}
+
+function addEmployee(){
+    console.log( 'in addEmployee!' );
 }
