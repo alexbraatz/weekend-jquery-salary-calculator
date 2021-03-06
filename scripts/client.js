@@ -14,7 +14,7 @@ function addEmployee(){
         lname: $( '#lastNameIn' ).val( ),
         id: $( '#idIn' ).val( ),
         title: $( '#titleIn' ).val( ),
-        salary: $( '#salaryIn' ).val( )
+        salary: Number( $( '#salaryIn' ).val( ) )
     }
     // empty text imput
     $( '.inputText' ).val( '' );
@@ -22,17 +22,18 @@ function addEmployee(){
     allEmployees.push( newEmployee );
     // update the DOM
     showEmployees();
+    // return allEmployees
     return allEmployees;
 }
 
 function showEmployees( ){
     console.log( 'in showEmployees' );
 
-    // let table = $( '#employeeList' );
-    // table.empty();
+    let table = $( '#employeeList' );
+    table.empty();
 
-    // for( let i=0; i<allEmployees.length; i++){
-    //     table.append(`<tr>
-    //     <td>${allEmployees[i].fname}</td>`)
-    // }
+    for( let i=0; i<allEmployees.length; i++){
+        table.append(`<tr>
+        <td>${allEmployees[i].fname}</td>`)
+    }
 }
