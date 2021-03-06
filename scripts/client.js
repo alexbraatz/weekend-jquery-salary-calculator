@@ -56,5 +56,9 @@ function totalMonthlyCost(){
         runningCount += allEmployees[i].salary
     }
 
+    if( runningCount >= 20000 ){
+        $( '#allMonthly' ).css("background-color", "#ff140e");
+    }
+
     total.append( runningCount );
 }
