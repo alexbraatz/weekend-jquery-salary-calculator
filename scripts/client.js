@@ -39,6 +39,7 @@ function showEmployees( ){
         <td>${allEmployees[i].id}</td>
         <td>${allEmployees[i].title}</td>
         <td>${allEmployees[i].salary}</td>
+        <td><button>Delete</button></td>
         </tr>`)
     }
 }
