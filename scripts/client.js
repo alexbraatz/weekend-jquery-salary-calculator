@@ -48,4 +48,13 @@ function showEmployees( ){
 
 function totalMonthlyCost(){
     console.log( 'in totalMonthlyCost' );
+    let total = $( '#monthlyCosts' );
+    total.empty();
+    let runningCount = 0;
+
+    for( let i=0; i<allEmployees.length; i++ ){
+        runningCount += allEmployees[i].salary
+    }
+
+    total.append( runningCount );
 }
