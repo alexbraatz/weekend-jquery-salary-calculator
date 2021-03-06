@@ -22,6 +22,8 @@ function addEmployee(){
     allEmployees.push( newEmployee );
     // update the DOM
     showEmployees();
+    // update monthly costs
+    totalMonthlyCost();
     // return allEmployees
     return allEmployees;
 }
@@ -42,4 +44,8 @@ function showEmployees( ){
         <td><button>Delete</button></td>
         </tr>`)
     }
+}
+
+function totalMonthlyCost(){
+    console.log( 'in totalMonthlyCost' );
 }
