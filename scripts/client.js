@@ -34,6 +34,11 @@ function showEmployees( ){
 
     for( let i=0; i<allEmployees.length; i++){
         table.append(`<tr>
-        <td>${allEmployees[i].fname}</td>`)
+        <td>${allEmployees[i].fname}</td>
+        <td>${allEmployees[i].lname}</td>
+        <td>${allEmployees[i].id}</td>
+        <td>${allEmployees[i].title}</td>
+        <td>${allEmployees[i].salary}</td>
+        </tr>`)
     }
 }
